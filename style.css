@@ -12,8 +12,25 @@
     scroll-behavior: smooth;
     
   }
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+  }
+  #title{
+    margin-top: 100px;
+  }
+
+  .btn{
+    border-radius: 4rem !important;
+  }
   h1{
-    font-size: 5rem;
+    font: size 1rem;
     color: #EADBC8;
   }
   .profile-img{
@@ -21,11 +38,24 @@
    
   }
   .hero{
-    font-family:Bree serif;
+    font-family: "Allerta Stencil", Sans-serif;
     color: #DAC0A3;
   }
   .lead{
     color: #EADBC8;
+    font-family: "Courier New", monospace;
+  }
+  .par{
+    font-family: "Courier New", monospace;
+  }
+  .project {
+    width: 60%;
+    float: left;
+  }
+  
+  .Certifications {
+    width: 40%;
+    float: right;
   }
   .social-media-logos{
     margin: 0%;
@@ -59,8 +89,8 @@
   margin-bottom: 1rem;
 }
 .section:hover{
-  border-left:5px solid #102C57;
-  border-bottom:5px solid #102C57;
+  border-left:5px solid #D80032;
+  border-bottom:5px solid #F78CA2;
   margin-bottom: .8rem;
 }
 .about>h3{
@@ -72,11 +102,12 @@
   margin-bottom: 3rem;
 }
 .about h2{
+  font-family: Roboto, sans-serif;
   font-size: 1.7rem;
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 150;
   text-align: center;
-  color: #102C57;
+  color: white;
 }
 .education{
   margin: 0;
@@ -89,12 +120,13 @@
 .about{
   font-size: 1rem;
   font-weight: 400;
+  margin: 40px;
   
 }
 .divider{
   margin-bottom: 4rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .contact-sec{
   color:  #102C57;
