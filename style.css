@@ -185,7 +185,7 @@ h1 {
 
 #confirmationMessage.show {
   opacity: 1; /* Make it fully visible */
-  animation: celebrate 3s ease; /* Apply animation */
+  animation: celebrate 6s ease; /* Apply animation */
 }
 
 /* Animation Keyframes */
