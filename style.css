@@ -1,99 +1,121 @@
+/* Gradient Background */
 .gradient-background-hero {
-    background: linear-gradient(300deg, #EADBC8,#DAC0A3,#102C57);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
-    
-  }
-  .background{
-    background-color: #EADBC8;
-    font-size: 18px;
-    color:#CAEDFF;
-    font-family: "poppins",sans-serif;
-    scroll-behavior: smooth;
-    
-  }
-  #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 999;
-    margin-bottom: 0%;
-    padding-bottom: 0%;
-  }
-  #title{
-    margin-top: 100px;
-  }
+  background: linear-gradient(300deg, #EADBC8, #DAC0A3, #102C57);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
 
-  .btn{
-    border-radius: 4rem !important;
-  }
-  h1{
-    font: size 1rem;
-    color: #EADBC8;
-  }
-  .profile-img{
-    border-radius:5%;
-   
-  }
-  .hero{
-    font-family: "Allerta Stencil", Sans-serif;
-    color: #DAC0A3;
-  }
-  .lead{
-    color: #EADBC8;
-    font-family: "Courier New", monospace;
-  }
-  .par{
-    font-family: "Courier New", monospace;
-  }
-  .project {
-    width: 60%;
-    float: left;
-  }
-  
-  .Certifications {
-    width: 40%;
-    float: right;
-  }
-  .social-media-logos{
-    margin: 0%;
-    margin-top: 3rem;
-  
-  }
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
- #about{
-  
+/* General styles */
+.background {
+  background-color: #EADBC8;
   font-size: 18px;
-  color:#102C57;
-  font-family: "poppins",sans-serif;
+  color: #CAEDFF;
+  font-family: "poppins", sans-serif;
   scroll-behavior: smooth;
 }
-.section{
+
+/* Header styles */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+}
+
+/* Title */
+#title {
+  margin-top: 100px;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 4rem !important;
+}
+
+/* Typography */
+h1 {
+  font-size: 1rem; /* Corrected property, should not be 'font: size' */
+  color: #EADBC8;
+}
+
+/* Profile image */
+.profile-img {
+  border-radius: 5%;
+}
+
+/* Section styles */
+.hero {
+  font-family: "Allerta Stencil", Sans-serif;
+  color: #DAC0A3;
+}
+
+.lead {
+  color: #EADBC8;
+  font-family: "Courier New", monospace;
+}
+
+.par {
+  font-family: "Courier New", monospace;
+}
+
+/* Project and Certifications */
+.project {
+  width: 60%;
+  float: left;
+}
+
+.Certifications {
+  width: 40%;
+  float: right;
+}
+
+/* Social Media Logos */
+.social-media-logos {
+  margin: 0;
+  margin-top: 3rem;
+}
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* About section */
+#about {
+  font-size: 18px;
+  color: #102C57;
+  font-family: "poppins", sans-serif;
+}
+
+/* Sections */
+.section {
   box-shadow: 0 4px 8px 0 #102C57, 0 6px 20px 0 #102C57;
   overflow: auto;
 }
-.about-container{
+
+.about-container {
   margin: 0 1%;
 }
-.section{
+
+.section {
   background-color: #DAC0A3;
   width: 90%;
   border-radius: 10px;
   padding: .5em;
   margin-bottom: 1rem;
 }
-.section:hover{
-  border-left:5px solid #D80032;
-  border-bottom:5px solid #F78CA2;
-  margin-bottom: .8rem;
+
+.section:hover {
+  border-left: 5px solid #D80032;
+  border-bottom: 5px solid #F78CA2;
 }
-.about>h3{
+
+/* About heading styles */
+.about > h3 {
   margin-top: 2rem;
   font-size: 2rem;
   font-weight: 500;
@@ -101,7 +123,8 @@
   color: #102C57;
   margin-bottom: 3rem;
 }
-.about h2{
+
+.about h2 {
   font-family: Roboto, sans-serif;
   font-size: 1.7rem;
   margin-bottom: 1rem;
@@ -109,28 +132,37 @@
   text-align: center;
   color: white;
 }
-.education{
+
+/* Education and about styles */
+.education {
   margin: 0;
 }
-.about h4{
+
+.about h4 {
   margin-top: .5rem;
   font-weight: 400;
   color: #0000a2cc;
 }
-.about{
+
+.about {
   font-size: 1rem;
   font-weight: 400;
   margin: 40px;
-  
 }
-.divider{
+
+/* Divider */
+.divider {
   margin-bottom: 4rem;
   display: flex;
   justify-content: space-between;
 }
-.contact-sec{
-  color:  #102C57;
+
+/* Contact Section */
+.contact-sec {
+  color: #102C57;
 }
+
+/* Verification styles */
 .verify {
   color: #DAC0A3;
   margin-bottom: -1rem;
@@ -140,9 +172,25 @@
   background-color: #102C57;
 }
 
-#about > div > div > h2 {
-  padding-top: 2rem;
+/* Footer */
+#Footer > p {
+  color: #102C57;
 }
-#Footer > p{
-  color:  #102C57;
+
+/* Confirmation Message Styles */
+#confirmationMessage {
+  transition: opacity 0.5s ease; /* Smooth transition for appearance */
+  opacity: 0; /* Start invisible */
+}
+
+#confirmationMessage.show {
+  opacity: 1; /* Make it fully visible */
+  animation: celebrate 3s ease; /* Apply animation */
+}
+
+/* Animation Keyframes */
+@keyframes celebrate {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
