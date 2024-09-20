@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
 <!--header section-->
@@ -175,38 +176,47 @@
     </div>
   </section>
   <!--Contact info section-->
-  <section id="contact" >
+  <section id="contact">
     <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-      <div class="row align-items-center g-lg-5 py-5">
-        <div class="contact-sec col-lg-7 text-center text-lg-start">
-          <h3 class="display-8 fw-bold mb-3">Contact </h3>
-          <p class="col-lg-10 fs-4"></p>
-          <h4>Name   : <span class="contact-h3">Abhishek AN</span></h4>
-          <h4>Email  : <span class="contact-h3">abhishekan017@gmail.com</span></h4>
-          <h4>Mobile : <span class="contact-h3">8762490952</span></h4> 
-        </div>
-        <div class="col-md-10 mx-auto col-lg-5">
-          <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="floatingInput" placeholder="Enter your name">
-              <label for="floatingInput">Enter your name</label>
+        <div class="row align-items-center g-lg-5 py-5">
+            <div class="contact-sec col-lg-7 text-center text-lg-start">
+                <h3 class="display-8 fw-bold mb-3">Contact</h3>
+                <p class="col-lg-10 fs-4"></p>
+                <h4>Name : <span class="contact-h3">Abhishek AN</span></h4>
+                <h4>Email : <span class="contact-h3">abhishekan017@gmail.com</span></h4>
+                <h4>Mobile : <span class="contact-h3">8762490952</span></h4>
             </div>
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="Enter your name">
-              <label for="floatingInput">Enter your email</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="FeedBack">
-              <label for="floatingPassword">FeedBack</label>
-            </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">submit</button>
-            <hr class="my-4">
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+            
+            <div class="col-md-10 mx-auto col-lg-5">
+                <form id="feedbackForm" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInputName" name="name" placeholder="Enter your name" required>
+                        <label for="floatingInputName">Enter your name</label>
+                    </div>
 
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInputEmail" name="email" placeholder="Enter your email" required>
+                        <label for="floatingInputEmail">Enter your email</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="floatingFeedback" name="message" placeholder="FeedBack" required></textarea>
+                        <label for="floatingFeedback">FeedBack</label>
+                    </div>
+
+                    <button class="w-100 btn btn-lg btn-primary submit-button" type="submit">Submit</button>
+                    <hr class="my-4">
+                </form>
+
+                <!-- Confirmation message -->
+                <div id="confirmationMessage" class="mt-3 d-none">
+                    <p class="text-success">Your form has been submitted successfully!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="script.js"></script>
     <!--Footer section-->
     <section id="Footer">
       <div class="d-flex flex-column flex-sm-row justify-content-center py-4  ">
